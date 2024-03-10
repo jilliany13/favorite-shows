@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Hind', sans-serif;
+}
+
+
+.form-container {
+    width: 500px;
+    margin: auto;
+    margin-top: 15px;
+    border: solid black 1px;
+    border-radius: 8%;
+    background: rgba(245, 187, 39, 0.2);
+}
+
+.back-to-list {
+    display: block;
+    text-decoration: none;
+    background: darkgoldenrod;
+    color: white;
+    position: absolute;
+    left: 40px;
+    top: 0px;
+    height: 40px;
+    width: 120px;
+    border-radius: 25px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.back-to-list:hover {
+    background: white;
+    color: darkgoldenrod;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.required-message {
+    font-size: smaller;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+.group {
+    width: 100%; 
+    margin-top: 15px;
+}
+
+label {
+    font-weight: 500;
+}
+
+input {
+    margin: auto;
+    display: block;
+    width: 70%;
+}
+
+button {
+    margin-top: 20px;
+    background: white;
+    height: 40px;
+    width: 100px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: darkgoldenrod;
+    font-size: medium;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    background: darkgoldenrod; 
+    color: white;
+}
+
+button:disabled {
+    background: #e0dedee8;
+    color: #b89958;
+}
+
+button:disabled:hover {
+    cursor: not-allowed;
+}

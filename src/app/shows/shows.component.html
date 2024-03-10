@@ -1,0 +1,32 @@
+<div *ngIf="!selectedShow" class="outer-container">
+    <ul class="shows-list">
+        <li 
+            class="container" 
+            *ngFor="let show of shows"
+            (click)="onSelect(show)"
+        >
+            <div class="show-container">
+                <h2 class="name show">{{ show.name }}</h2>
+                <p class="description show"><strong>Description: </strong>{{ show.description }}</p>
+                <img class="image" [src]="show.imageUrl">
+                <p class="watch show"><strong>Where to watch:</strong> {{ show.watch }}</p>
+                <p class="seasons show"><strong>Seasons:</strong> {{ show.seasons }} </p>
+                <p class="actors show"><strong>Actors:</strong> {{ show.actors }} </p>
+            </div>
+        </li> 
+    </ul>
+</div>
+
+
+<div *ngIf="selectedShow" class="outer-selected-container">
+    <button (click)="backHome()" class="back-to-list">Back to List</button>
+    <div class="inner-selected-container">
+        <h1 class="title-detail">{{ selectedShow.name }}</h1>
+        <p class="detail"> <strong>Description:</strong> {{ selectedShow.description }}</p>
+        <img [src]="selectedShow.imageUrl" class="image-detail">
+        <p class="detail"><strong>Where to watch:</strong> {{ selectedShow.watch }}</p>
+        <p class="detail"><strong>Seasons:</strong> {{ selectedShow.seasons }} </p>
+        <p class="detail"><strong>Actors:</strong> {{ selectedShow.actors }} </p>
+    </div>
+</div>
+

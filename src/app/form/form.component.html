@@ -1,0 +1,73 @@
+<div class="form-container">
+    <button (click)="backHome()" class="back-to-list">Back to List</button>
+    <form #newShowForm="ngForm" (ngSubmit)="onSubmit()" class="form">
+        <div>
+            <h2 class="title">Add New Favorite Show</h2>
+            <p class="required-message">*All fields on form are required!*</p>
+        </div>
+        <div class="group">
+            <label for="name">Show Name</label>
+            <input 
+                type="text" 
+                ngModel 
+                name="name"
+                required
+            >
+        </div>
+        <div class="group">
+            <label for="description">Description</label>
+            <input 
+                type="text"
+                ngModel 
+                name="description"
+                required
+            >
+        </div>
+        <div class="group">
+            <label for="imageUrl">Image Url</label>
+            <input 
+                type="text" 
+                ngModel 
+                name="imageUrl"
+                required
+            >  
+        </div>
+        <div class="group">
+            <label for="watch">Where to Watch</label>
+            <input 
+                type="text" 
+                ngModel 
+                name="watch"
+                required
+            >  
+        </div>
+        <div class="group">
+            <label for="actors">Actors</label>
+            <input 
+                type="text" 
+                ngModel 
+                name="actors"
+                required
+            >  
+        </div>
+        <div class="group">
+            <label for="seasons">Seasons</label>
+            <input 
+                type="number" 
+                ngModel 
+                name="seasons"
+                required
+                min="1"
+            >  
+        </div>
+        <button type="submit" [disabled]="!newShowForm.valid">Add Show</button>
+    </form>
+</div>
+
+<!-- <div *ngIf="submitted">
+    <p>The form was submitted!</p>
+    <p>Name: {{showModel.name}}</p>
+    <p>Description: {{showModel.description}}</p>
+    <p>Image: {{showModel.imageUrl}}</p>
+    <p>Watch: {{showModel.watch}}</p>
+</div> -->

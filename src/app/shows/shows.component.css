@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+
+* {
+    font-family: 'Hind', sans-serif;
+}
+
+/* for the main (list) part of the site */
+
+.outer-container {
+    margin-left: 60px;
+}
+
+.shows-list {
+    margin-top: 30px;
+}
+
+.container {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: column;
+    height: 415px;
+    width: 400px;
+    border: groove darkgoldenrod 3px;
+    background: white;
+    border-radius: 25px;
+    margin: 15px 15px 20px 15px;
+    text-align: center;
+
+}
+
+.show {
+    width: 90%;
+    margin: 17px auto 10px auto;
+}
+
+.container:hover {
+    background: darkgoldenrod; 
+    color: white;
+    cursor: pointer;
+    transform: translateY(-20px);
+}
+
+.name {
+    text-align: center;
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+.image {
+    height: 100px;
+    width: auto;
+}
+
+
+
+
+
+
+.back-to-list {
+    display: block;
+    text-decoration: none;
+    background: darkgoldenrod;
+    color: white;
+    position: absolute;
+    left: 40px;
+    top: 70px;
+    height: 40px;
+    width: 120px;
+    border-radius: 25px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.back-to-list:hover {
+    background: white;
+    color: darkgoldenrod;
+}
+
+/* after a show is selected  */
+
+.outer-selected-container {
+    width: 100%;
+}
+
+.inner-selected-container {
+    width: 50%; 
+    margin: auto;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-detail {
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+.detail {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.image-detail {
+    height: 400px; 
+    width: auto; 
+    margin-bottom: 20px;
+}
+

@@ -1,5 +1,7 @@
 # FavoriteShows
 
+This is a project I made at the end of my first web development internship to showcase what I learned about the Angular Framework HTML, CSS, and TypeScript. It lists my favorite shows as cards, and you can click on each one to show a detailed version of the show card. In addition, you can add your own shows to the website using the "Add Show" button and filling in the needed information in the form. I hope you enjoy! 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 
 ## Development server
